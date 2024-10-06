@@ -1,0 +1,9 @@
+*{
+    font-family: ;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+}

@@ -1,6 +1,5 @@
 var cadastro = [];
 var qtdeElementos = 0;
-var tbody = document.getElementById("animeTabela"); 
 
 function guardarDados(event){
     var nomeAnime = document.getElementById("nomeAnime").value;
@@ -47,7 +46,7 @@ function exibirCadastros() {
     data4.textContent = cadastro[qtdeElementos].nota;
     linha.appendChild(data4);
 
-    tbody.appendChild(linha);
+    document.getElementById("animeTabela").appendChild(linha);
 
     qtdeElementos++;
 }
