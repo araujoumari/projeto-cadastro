@@ -11,43 +11,48 @@
     <div class="container">
         <div>
             <main>
-                <h1>Preencha o formulário</h1>
-                <form>
-                    <div class="campo">
-                        <label for="nomeAnime">Nome do Anime: </label>
-                        <input type="text" name="nomeAnime" id="nomeAnime">
-                    </div>
-                    <div class="campo">
-                        <label for="genero">Gênero: </label>
-                        <select name="genero" id="genero">
-                            <option value="terror">Terror</option>
-                            <option value="comedia">Comédia</option>
-                            <option value="romace">Romance</option>
-                            <option value="suspense">Suspense</option>
-                        </select>
-                    </div>
-                    <div class="campo">
-                        <label for="ano">Ano de Lançamento:</label>
-                        <input type="number" name="ano" id="ano">
-                    </div>
-                    <div class="campo">
-                        <label for="nota">Nota:</label>
-                        <input type="number" name="nota" id="nota" min="0" max="10">
-                    </div>
-                    <button onclick="guardarDados(event)">Enviar</button>
-                </form>
-                <table id="tabelaCadastro">
-                    <thead>
-                        <tr>
-                            <th>Nome do Anime</td>
-                            <th>Gênero do Anime</td>
-                            <th>Ano de Lançamento</td>
-                            <th>Nota</td>
-                        </tr>
-                    </thead>
-                    <tbody id="animeTabela">
-                    </tbody>
-                </table>
+                <div class="imagemEsq">
+                    <img src="imagens/1278353618493ed5ffb8d9a4d207f87c.jpg" alt="">
+                </div>
+                <div class="conteudo">
+                    <h1>Preencha o formulário</h1>
+                    <form>
+                        <div class="campo">
+                            <label for="nomeAnime">Nome do Anime: </label>
+                            <input type="text" name="nomeAnime" id="nomeAnime">
+                        </div>
+                        <div class="campo">
+                            <label for="genero">Gênero: </label>
+                            <select name="genero" id="genero">
+                                <option value="terror">Terror</option>
+                                <option value="comedia">Comédia</option>
+                                <option value="romace">Romance</option>
+                                <option value="suspense">Suspense</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="ano">Ano de Lançamento:</label>
+                            <input type="date" name="ano" id="ano">
+                        </div>
+                        <div class="campo">
+                            <label for="nota">Nota:</label>
+                            <input type="number" name="nota" id="nota" min="0" max="10">
+                        </div>
+                        <button onclick="guardarDados(event)">Enviar</button>
+                    </form>
+                    <table id="tabelaCadastro">
+                        <thead>
+                            <tr>
+                                <th>Nome do Anime</td>
+                                <th>Gênero do Anime</td>
+                                <th>Ano de Lançamento</td>
+                                <th>Nota</td>
+                            </tr>
+                        </thead>
+                        <tbody id="animeTabela">
+                        </tbody>
+                    </table>
+                </div>
             </main>
             <footer></footer>
         </div>
